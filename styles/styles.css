@@ -1,3 +1,125 @@
-* {
-    border: 2px solid red;
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('../webfont/SittingDuckDEMO-Regular.otf') format('truetype');
+  }
+
+body {
+    padding: 40px;
+    margin-top: 40px;
+    background-image: url(/img/wood_txt.jpg);
+}
+
+h1 {
+    font-family: 'MyFont';
+    font-size: 55px;
+    color: #f0e2fe;
+    font-weight: lighter;
+    text-shadow: 1px 1px 2px black;
+}
+
+.contDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tittleDiv {
+    background-color: #cea0fc;
+    width: 300px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px black;
+    margin-top: -90px;
+    position: absolute;
+    border: 1px solid black;
+}
+
+.catImg {
+    border-radius: 15px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 2px black;
+    border: 1px solid #292929;
+}
+
+.container {
+    background-color: #f0e2fe;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #292929;
+    flex-direction: column;
+    box-shadow: 4px 4px 8px black;
+    border-radius: 15px;
+    padding-top: 90px;
+    width: 1100px;
+}
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #292929;
+    background-color: #cea0fc;
+    box-shadow: 1px 1px 2px black;
+    width: 800px;
+    height: 300px;
+    gap: 30px;
+    padding: 30px;
+}
+
+.foodImg {
+    width: 200px;
+    height: 200px;
+    transition: transform 0.6s ease-in-out, filter 0.5s ease;
+}
+
+.foodImg:hover {
+    transform: translateY(15px);
+    filter: brightness(70%);
+}
+
+.pClass {
+    color: #cea0fc;
+    font-size: 40px;
+    font-family: 'MyFont';
+    font-weight: lighter;
+    margin-top: -5px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px black;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-bottom: -30px;
+    justify-content: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #292929;
+}
+
+#footerLink {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#footerLink:hover {
+    color: #ffffff;
+    text-decoration: underline;
 }
