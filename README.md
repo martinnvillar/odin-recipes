@@ -1,3 +1,3 @@
 # odin-recipes
-Odin recipes project
+Odin recipes
   first html project
